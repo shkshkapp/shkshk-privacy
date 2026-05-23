@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Shkshk</title>
+<style>
+  :root {
+    --bg: #111827;
+    --bg2: #1F2937;
+    --accent: #818CF8;
+    --text: #F9FAFB;
+    --text2: #9CA3AF;
+    --border: #374151;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Arial, sans-serif;
+    line-height: 1.7;
+    padding: 24px 16px 80px;
+  }
+  .container { max-width: 720px; margin: 0 auto; }
+  h1 { color: var(--accent); font-size: 28px; margin-bottom: 4px; }
+  h2 { color: var(--accent); font-size: 20px; margin-top: 32px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+  h3 { color: var(--text); font-size: 16px; margin-top: 20px; }
+  p, li { color: var(--text2); font-size: 15px; }
+  a { color: var(--accent); }
+  .meta { color: var(--text2); font-size: 13px; margin-bottom: 24px; }
+  .lang-toggle { display: flex; gap: 8px; justify-content: center; margin-bottom: 24px; }
+  .lang-toggle a {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .lang-toggle a.active { background: var(--accent); color: var(--bg); }
+  [lang="ar"] { direction: rtl; text-align: right; }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 40px 0; }
+  .footer { text-align: center; color: var(--text2); font-size: 13px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="lang-toggle">
+    <a href="#ar" onclick="show('ar')" id="btn-ar" class="active">العربية</a>
+    <a href="#en" onclick="show('en')" id="btn-en">English</a>
+  </div>
+
+  <!-- ─────────────── العربية ─────────────── -->
+  <section id="ar" lang="ar">
+    <h1>سياسة الخصوصية — Shkshk</h1>
+    <p class="meta">آخر تحديث: 2026-05-23</p>
+
+    <h2>1. مقدمة</h2>
+    <p>
+      تطبيق <strong>Shkshk</strong> (لعبة Dots & Boxes) يحترم خصوصيتك. توضح هذه السياسة
+      البيانات التي نجمعها وكيف نستخدمها وحقوقك تجاهها.
+    </p>
+
+    <h2>2. البيانات التي نجمعها</h2>
+
+    <h3>أ. بيانات الحساب</h3>
+    <ul>
+      <li>الاسم الذي اخترته</li>
+      <li>الأيقونة التي اخترتها</li>
+      <li>اللغة المفضلة</li>
+      <li>معرّف Firebase (UID) — لا يحتوي على أي بيانات شخصية</li>
+    </ul>
+
+    <h3>ب. بيانات اللعبة</h3>
+    <ul>
+      <li>إحصائيات اللعب (XP، عدد المباريات، الفوز، الإنجازات)</li>
+      <li>قائمة الأصدقاء التي تنشئها داخل التطبيق</li>
+      <li>تاريخ التحديات بين اللاعبين</li>
+    </ul>
+
+    <h3>ج. بيانات تقنية</h3>
+    <ul>
+      <li>نوع الجهاز ونظام التشغيل (للتوافق)</li>
+      <li>تقارير الأخطاء عبر Sentry (لإصلاح المشاكل)</li>
+      <li>عنوان IP أثناء اللعب الأونلاين (لا نحفظه)</li>
+    </ul>
+
+    <h3>د. الإعلانات (عند التفعيل)</h3>
+    <p>
+      نستخدم <strong>Google AdMob</strong> لعرض إعلانات داخل التطبيق. الإعلانات الافتراضية
+      هي <em>non-personalized ads</em> (إعلانات عامة) ولا تتطلب جمع بيانات إضافية عنك.
+      إذا فعّلنا الإعلانات المخصصة مستقبلاً، سنطلب موافقتك الصريحة عبر طلب App Tracking Transparency
+      على iOS.
+    </p>
+
+    <h2>3. كيف نستخدم بياناتك</h2>
+    <ul>
+      <li>تشغيل ميزات اللعبة (الحساب، الأصدقاء، الأونلاين)</li>
+      <li>تحسين تجربة المستخدم</li>
+      <li>إصلاح الأخطاء التقنية</li>
+      <li>عرض إعلانات (عند التفعيل)</li>
+    </ul>
+
+    <h2>4. مع من نشارك بياناتك</h2>
+    <p>
+      نشارك بياناتك فقط مع خدمات تقنية موثوقة لتشغيل التطبيق:
+    </p>
+    <ul>
+      <li><strong>Google Firebase</strong> — قاعدة البيانات والمصادقة</li>
+      <li><strong>Google AdMob</strong> — عرض الإعلانات (عند التفعيل)</li>
+      <li><strong>Sentry</strong> — تتبع الأخطاء التقنية</li>
+      <li><strong>Fly.io + Upstash</strong> — خوادم اللعب الأونلاين</li>
+    </ul>
+    <p><strong>لا نبيع بياناتك لأي طرف ثالث.</strong></p>
+
+    <h2>5. حقوقك</h2>
+    <ul>
+      <li><strong>الوصول:</strong> يمكنك رؤية كل بياناتك في الملف الشخصي داخل التطبيق</li>
+      <li><strong>الحذف:</strong> راسلنا على البريد أدناه لحذف حسابك وكل بياناتك خلال 30 يوم</li>
+      <li><strong>التعديل:</strong> يمكنك تعديل اسمك وأيقونتك من الملف الشخصي</li>
+      <li><strong>الانسحاب:</strong> احذف التطبيق في أي وقت لإيقاف جمع البيانات</li>
+    </ul>
+
+    <h2>6. الأطفال</h2>
+    <p>
+      التطبيق مناسب لكل الأعمار (تصنيف PG). لا نجمع بشكل متعمد بيانات من أطفال أقل من 13 سنة.
+      إذا اكتشفنا ذلك، سنحذف البيانات فوراً.
+    </p>
+
+    <h2>7. الأمان</h2>
+    <p>
+      نحمي بياناتك بـ:
+    </p>
+    <ul>
+      <li>تشفير TLS لكل الاتصالات</li>
+      <li>قواعد أمان Firebase صارمة</li>
+      <li>مصادقة Firebase لكل عملية</li>
+    </ul>
+
+    <h2>8. التغييرات على هذه السياسة</h2>
+    <p>
+      قد نحدّث هذه السياسة. التغييرات تظهر هنا مع تحديث "آخر تحديث" في الأعلى.
+      التغييرات الجوهرية ستُشعَر داخل التطبيق.
+    </p>
+
+    <h2>9. اتصل بنا</h2>
+    <p>
+      لأي سؤال أو طلب: <a href="mailto:kuwaitx9@gmail.com">kuwaitx9@gmail.com</a>
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- ─────────────── English ─────────────── -->
+  <section id="en" lang="en" style="display:none;">
+    <h1>Privacy Policy — Shkshk</h1>
+    <p class="meta">Last updated: 2026-05-23</p>
+
+    <h2>1. Introduction</h2>
+    <p>
+      <strong>Shkshk</strong> (a Dots & Boxes game) respects your privacy.
+      This policy explains what data we collect, how we use it, and your rights.
+    </p>
+
+    <h2>2. Data We Collect</h2>
+
+    <h3>a. Account data</h3>
+    <ul>
+      <li>Your chosen name and avatar</li>
+      <li>Preferred language</li>
+      <li>Firebase user ID (no personal info)</li>
+    </ul>
+
+    <h3>b. Game data</h3>
+    <ul>
+      <li>Gameplay stats (XP, games played, wins, achievements)</li>
+      <li>Your friends list inside the app</li>
+      <li>Challenge history with other players</li>
+    </ul>
+
+    <h3>c. Technical data</h3>
+    <ul>
+      <li>Device type and OS version (for compatibility)</li>
+      <li>Crash reports via Sentry (to fix bugs)</li>
+      <li>IP address during online play (not stored)</li>
+    </ul>
+
+    <h3>d. Ads (when enabled)</h3>
+    <p>
+      We use <strong>Google AdMob</strong> for in-app ads. By default we serve
+      <em>non-personalized ads</em>, which don't require collecting extra data
+      about you. If we enable personalized ads in the future, we'll request
+      your explicit consent via Apple's App Tracking Transparency on iOS.
+    </p>
+
+    <h2>3. How We Use Your Data</h2>
+    <ul>
+      <li>Run game features (account, friends, online play)</li>
+      <li>Improve user experience</li>
+      <li>Fix technical bugs</li>
+      <li>Show ads (when enabled)</li>
+    </ul>
+
+    <h2>4. Who We Share Data With</h2>
+    <p>
+      We share data only with trusted technical services that power the app:
+    </p>
+    <ul>
+      <li><strong>Google Firebase</strong> — database and auth</li>
+      <li><strong>Google AdMob</strong> — ad delivery (when enabled)</li>
+      <li><strong>Sentry</strong> — crash reporting</li>
+      <li><strong>Fly.io + Upstash</strong> — online game servers</li>
+    </ul>
+    <p><strong>We do not sell your data to any third party.</strong></p>
+
+    <h2>5. Your Rights</h2>
+    <ul>
+      <li><strong>Access:</strong> view all your data in the Profile screen</li>
+      <li><strong>Deletion:</strong> email us below to delete your account and all data within 30 days</li>
+      <li><strong>Editing:</strong> update name and avatar from Profile</li>
+      <li><strong>Opt-out:</strong> uninstall the app at any time to stop data collection</li>
+    </ul>
+
+    <h2>6. Children</h2>
+    <p>
+      The app is suitable for all ages (PG rated). We do not knowingly collect
+      data from children under 13. If we discover such data, we'll delete it
+      immediately.
+    </p>
+
+    <h2>7. Security</h2>
+    <p>We protect your data with:</p>
+    <ul>
+      <li>TLS encryption for all connections</li>
+      <li>Strict Firebase security rules</li>
+      <li>Firebase Auth on every operation</li>
+    </ul>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>
+      We may update this policy. Changes appear here with a refreshed
+      "Last updated" date. Material changes will be notified in-app.
+    </p>
+
+    <h2>9. Contact Us</h2>
+    <p>
+      For any question or request: <a href="mailto:kuwaitx9@gmail.com">kuwaitx9@gmail.com</a>
+    </p>
+  </section>
+
+  <p class="footer">© 2026 Shkshk · <a href="mailto:kuwaitx9@gmail.com">kuwaitx9@gmail.com</a></p>
+
+</div>
+
+<script>
+function show(lang) {
+  document.getElementById('ar').style.display = (lang === 'ar') ? 'block' : 'none';
+  document.getElementById('en').style.display = (lang === 'en') ? 'block' : 'none';
+  document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+}
+if (location.hash === '#en') show('en');
+</script>
+
+</body>
+</html>
