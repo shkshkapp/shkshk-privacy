@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Account — Shkshk</title>
+<style>
+  :root {
+    --bg: #111827;
+    --bg2: #1F2937;
+    --accent: #818CF8;
+    --text: #F9FAFB;
+    --text2: #9CA3AF;
+    --border: #374151;
+    --red: #F87171;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Arial, sans-serif;
+    line-height: 1.7;
+    padding: 24px 16px 80px;
+  }
+  .container { max-width: 720px; margin: 0 auto; }
+  h1 { color: var(--accent); font-size: 28px; margin-bottom: 4px; }
+  h2 { color: var(--accent); font-size: 20px; margin-top: 32px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+  p, li { color: var(--text2); font-size: 15px; }
+  a { color: var(--accent); }
+  .meta { color: var(--text2); font-size: 13px; margin-bottom: 24px; }
+  .lang-toggle { display: flex; gap: 8px; justify-content: center; margin-bottom: 24px; }
+  .lang-toggle a {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .lang-toggle a.active { background: var(--accent); color: var(--bg); }
+  [lang="ar"] { direction: rtl; text-align: right; }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 40px 0; }
+  .footer { text-align: center; color: var(--text2); font-size: 13px; margin-top: 40px; }
+  .step {
+    background: var(--bg2);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    border: 1px solid var(--border);
+  }
+  .step strong { color: var(--text); }
+  .email-box {
+    background: var(--accent);
+    color: var(--bg);
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 12px 0;
+    font-size: 16px;
+  }
+  .note {
+    background: rgba(248,113,113,0.1);
+    border: 1px solid var(--red);
+    border-radius: 10px;
+    padding: 12px 16px;
+    color: var(--text);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="lang-toggle">
+    <a href="#ar" onclick="show('ar')" id="btn-ar" class="active">العربية</a>
+    <a href="#en" onclick="show('en')" id="btn-en">English</a>
+  </div>
+
+  <!-- ─────────────── العربية ─────────────── -->
+  <section id="ar" lang="ar">
+    <h1>حذف الحساب — Shkshk</h1>
+    <p class="meta">آخر تحديث: 2026-05-24</p>
+
+    <h2>طلب حذف حسابك وبياناتك</h2>
+    <p>
+      تطبيق <strong>Shkshk</strong> يحترم حقك في حذف حسابك وكل بياناتك المرتبطة به في أي وقت.
+    </p>
+
+    <h2>كيف تطلب الحذف</h2>
+
+    <div class="step">
+      <strong>الخطوة 1:</strong> أرسل بريداً إلكترونياً إلى:
+      <br>
+      <a class="email-box" href="mailto:shkshk.app@gmail.com?subject=طلب حذف حساب">
+        ✉️ shkshk.app@gmail.com
+      </a>
+    </div>
+
+    <div class="step">
+      <strong>الخطوة 2:</strong> في موضوع البريد اكتب: <em>"طلب حذف حساب"</em>
+    </div>
+
+    <div class="step">
+      <strong>الخطوة 3:</strong> في نص البريد أرسل:
+      <ul>
+        <li>اسم المستخدم الذي اخترته في التطبيق</li>
+        <li>تاريخ تقريبي لإنشاء الحساب</li>
+        <li>إيميل تسجيل الدخول (Google/Apple) إن أمكن</li>
+      </ul>
+    </div>
+
+    <h2>ما الذي سيُحذف</h2>
+    <p>خلال 30 يوم من استلام طلبك، سنحذف نهائياً:</p>
+    <ul>
+      <li>✅ ملفك الشخصي (الاسم، الأيقونة، اللغة)</li>
+      <li>✅ جميع إحصائياتك (XP، المباريات، الإنجازات)</li>
+      <li>✅ قائمة أصدقائك وتاريخ التحديات</li>
+      <li>✅ Push notification token</li>
+      <li>✅ حساب Firebase الخاص بك</li>
+    </ul>
+
+    <h2>ما الذي قد يبقى</h2>
+    <p>قد نحتفظ ببعض البيانات لفترة محدودة لأسباب قانونية:</p>
+    <ul>
+      <li>سجلات الأخطاء التقنية (Sentry) — تُحذف خلال 90 يوم تلقائياً</li>
+      <li>بيانات المعاملات (إن وُجدت) — كما يتطلب القانون</li>
+    </ul>
+
+    <div class="note">
+      <strong>ملاحظة:</strong> الحذف نهائي ولا يمكن استرجاع البيانات بعده.
+    </div>
+
+    <h2>وقت المعالجة</h2>
+    <p>سيتم تنفيذ طلبك خلال <strong>30 يوم</strong> من تاريخ استلام البريد، وسنرسل لك تأكيداً عند الانتهاء.</p>
+
+    <h2>أسئلة أخرى</h2>
+    <p>
+      لأي استفسار: <a href="mailto:shkshk.app@gmail.com">shkshk.app@gmail.com</a>
+      <br>
+      اقرأ أيضاً <a href="./">سياسة الخصوصية الكاملة</a>.
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- ─────────────── English ─────────────── -->
+  <section id="en" lang="en" style="display:none;">
+    <h1>Delete Account — Shkshk</h1>
+    <p class="meta">Last updated: 2026-05-24</p>
+
+    <h2>Request Account & Data Deletion</h2>
+    <p>
+      <strong>Shkshk</strong> respects your right to delete your account and all
+      associated data at any time.
+    </p>
+
+    <h2>How to Request Deletion</h2>
+
+    <div class="step">
+      <strong>Step 1:</strong> Send an email to:
+      <br>
+      <a class="email-box" href="mailto:shkshk.app@gmail.com?subject=Account Deletion Request">
+        ✉️ shkshk.app@gmail.com
+      </a>
+    </div>
+
+    <div class="step">
+      <strong>Step 2:</strong> Use the subject: <em>"Account Deletion Request"</em>
+    </div>
+
+    <div class="step">
+      <strong>Step 3:</strong> In the email body include:
+      <ul>
+        <li>The username you chose in the app</li>
+        <li>Approximate date your account was created</li>
+        <li>Sign-in email (Google/Apple), if available</li>
+      </ul>
+    </div>
+
+    <h2>What Will Be Deleted</h2>
+    <p>Within 30 days of receiving your request, we will permanently delete:</p>
+    <ul>
+      <li>✅ Your profile (name, avatar, language)</li>
+      <li>✅ All your stats (XP, games played, achievements)</li>
+      <li>✅ Your friends list and challenge history</li>
+      <li>✅ Push notification token</li>
+      <li>✅ Your Firebase account</li>
+    </ul>
+
+    <h2>What May Be Retained</h2>
+    <p>We may retain some data temporarily for legal reasons:</p>
+    <ul>
+      <li>Technical error logs (Sentry) — auto-deleted within 90 days</li>
+      <li>Transaction records (if any) — as required by law</li>
+    </ul>
+
+    <div class="note">
+      <strong>Note:</strong> Deletion is permanent and data cannot be recovered.
+    </div>
+
+    <h2>Processing Time</h2>
+    <p>Your request will be processed within <strong>30 days</strong> of receipt, and we will send a confirmation when complete.</p>
+
+    <h2>Questions</h2>
+    <p>
+      For any inquiry: <a href="mailto:shkshk.app@gmail.com">shkshk.app@gmail.com</a>
+      <br>
+      Also read our <a href="./">full Privacy Policy</a>.
+    </p>
+  </section>
+
+  <p class="footer">© 2026 Shkshk · <a href="mailto:shkshk.app@gmail.com">shkshk.app@gmail.com</a></p>
+
+</div>
+
+<script>
+function show(lang) {
+  document.getElementById('ar').style.display = (lang === 'ar') ? 'block' : 'none';
+  document.getElementById('en').style.display = (lang === 'en') ? 'block' : 'none';
+  document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+}
+if (location.hash === '#en') show('en');
+</script>
+
+</body>
+</html>
