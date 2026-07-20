@@ -3,267 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shkshk privacy policy">
 <title>Privacy Policy — Shkshk</title>
 <style>
-  :root {
-    --bg: #111827;
-    --bg2: #1F2937;
-    --accent: #818CF8;
-    --text: #F9FAFB;
-    --text2: #9CA3AF;
-    --border: #374151;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Arial, sans-serif;
-    line-height: 1.7;
-    padding: 24px 16px 80px;
-  }
-  .container { max-width: 720px; margin: 0 auto; }
-  h1 { color: var(--accent); font-size: 28px; margin-bottom: 4px; }
-  h2 { color: var(--accent); font-size: 20px; margin-top: 32px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
-  h3 { color: var(--text); font-size: 16px; margin-top: 20px; }
-  p, li { color: var(--text2); font-size: 15px; }
-  a { color: var(--accent); }
-  .meta { color: var(--text2); font-size: 13px; margin-bottom: 24px; }
-  .lang-toggle { display: flex; gap: 8px; justify-content: center; margin-bottom: 24px; }
-  .lang-toggle a {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 8px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .lang-toggle a.active { background: var(--accent); color: var(--bg); }
-  [lang="ar"] { direction: rtl; text-align: right; }
-  hr { border: 0; border-top: 1px solid var(--border); margin: 40px 0; }
-  .footer { text-align: center; color: var(--text2); font-size: 13px; margin-top: 40px; }
+  :root{--bg:#111827;--panel:#1f2937;--accent:#8b9bff;--text:#f9fafb;--muted:#b7bfd0;--border:#374151;--warn:#f5c35b}
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.75;padding:24px 16px 72px}
+  .container{max-width:820px;margin:auto} h1{color:var(--accent);font-size:30px;margin:8px 0 2px} h2{color:var(--accent);font-size:20px;margin-top:32px;border-bottom:1px solid var(--border);padding-bottom:8px} h3{font-size:16px;margin:20px 0 4px} p,li{color:var(--muted);font-size:15px} strong{color:var(--text)} a{color:var(--accent)}
+  .meta{font-size:13px;margin:0 0 20px}.lang{display:flex;gap:8px;justify-content:center}.lang button{background:var(--panel);border:1px solid var(--border);color:var(--text);padding:9px 18px;border-radius:10px;font-weight:700;cursor:pointer}.lang button.active{background:var(--accent);color:var(--bg)}
+  .notice{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px 18px}.notice strong{color:var(--warn)} nav{display:flex;flex-wrap:wrap;gap:14px;margin:18px 0 8px} nav a{text-decoration:none;font-weight:700}.footer{text-align:center;color:var(--muted);font-size:13px;margin-top:42px}[lang="ar"]{direction:rtl;text-align:right}
 </style>
 </head>
-<body>
-<div class="container">
+<body><main class="container">
+  <div class="lang"><button id="btn-ar" class="active" onclick="showLang('ar')">العربية</button><button id="btn-en" onclick="showLang('en')">English</button></div>
 
-  <div class="lang-toggle">
-    <a href="#ar" onclick="show('ar')" id="btn-ar" class="active">العربية</a>
-    <a href="#en" onclick="show('en')" id="btn-en">English</a>
-  </div>
-
-  <!-- ─────────────── العربية ─────────────── -->
   <section id="ar" lang="ar">
     <h1>سياسة الخصوصية — Shkshk</h1>
-    <p class="meta">آخر تحديث: 2026-05-23</p>
+    <p class="meta">آخر تحديث: 20 يوليو 2026</p>
+    <p>توضح هذه السياسة كيف يتعامل تطبيق <strong>Shkshk</strong>، وهو مجموعة من سبع ألعاب لوحية، مع بياناتك عند اللعب محلياً أو ضد الذكاء الاصطناعي أو عبر الإنترنت.</p>
+    <nav><a href="delete-account.html">حذف الحساب</a><a href="terms.html">شروط الاستخدام</a><a href="support.html">الدعم</a></nav>
 
-    <h2>1. مقدمة</h2>
-    <p>
-      تطبيق <strong>Shkshk</strong> (لعبة Dots & Boxes) يحترم خصوصيتك. توضح هذه السياسة
-      البيانات التي نجمعها وكيف نستخدمها وحقوقك تجاهها.
-    </p>
+    <h2>1. البيانات التي نعالجها</h2>
+    <h3>الحساب والملف الشخصي</h3>
+    <ul><li>معرّف الحساب في Firebase ومزوّد تسجيل الدخول.</li><li>البريد الإلكتروني والاسم اللذان يتيحهما Google أو Apple عند موافقتك على تسجيل الدخول.</li><li>اسم اللاعب والصورة الرمزية والإطار واللغة التي تختارها.</li></ul>
+    <h3>التقدم واللعب الاجتماعي</h3>
+    <ul><li>XP والرتبة والإحصاءات والإنجازات والمكافآت والتحديات اليومية.</li><li>قائمة الأصدقاء وطلبات الصداقة والتحديات والحظر والبلاغات.</li><li>حالة الاتصال والغرف والحركات اللازمة لتشغيل المباريات عبر الإنترنت ومنع الغش.</li></ul>
+    <h3>الإشعارات والمعلومات التقنية</h3>
+    <ul><li>رمز إشعار الجهاز إذا سمحت بالإشعارات.</li><li>إصدار التطبيق ونوع الجهاز ونظام التشغيل وبيانات الأعطال والأداء والتشخيص.</li><li>عنوان IP ومعرّفات الاتصال التي تعالجها خدمات الاستضافة والأمان أثناء الاتصال، وتستخدم للحماية وتحديد المعدل وتشغيل اللعب.</li></ul>
+    <h3>الصور</h3>
+    <p>يمكن للتطبيق حفظ بطاقة نتيجة أنشأها بنفسه. لا يحتاج Shkshk إلى قراءة صورك أو فيديوهاتك، ولا يرفع محتوى مكتبة الصور إلى خوادمنا.</p>
+    <h3>الإعلانات عند تفعيلها</h3>
+    <p>يتضمن التطبيق Google AdMob، لكن ظهور الإعلانات يتحكم به إعداد عن بعد. عند تفعيلها قد تعالج Google عنوان IP ومعرّفات الجهاز والتفاعلات مع الإعلان وبيانات التشخيص ومنطقة الموافقة لأغراض عرض الإعلانات والقياس ومنع الاحتيال. نستخدم منصة موافقة Google حيث يلزم، ويمكن فتح خيارات خصوصية الإعلانات من التطبيق عندما تكون مطلوبة.</p>
 
-    <h2>2. البيانات التي نجمعها</h2>
+    <h2>2. لماذا نستخدم البيانات</h2>
+    <ul><li>إنشاء الحساب ومزامنة التقدم وتشغيل الأصدقاء والإشعارات والمباريات.</li><li>التحقق من نتائج اللعب وحماية الحسابات ومنع الغش والإساءة والاستهلاك غير الطبيعي.</li><li>تشخيص الأعطال وتحسين الأداء والتوافق.</li><li>عرض الإعلانات وقياسها عند تفعيلها وفق اختيارات الموافقة والقانون.</li><li>الرد على الدعم وتنفيذ طلبات الخصوصية.</li></ul>
 
-    <h3>أ. بيانات الحساب</h3>
-    <ul>
-      <li>الاسم الذي اخترته</li>
-      <li>الأيقونة التي اخترتها</li>
-      <li>اللغة المفضلة</li>
-      <li>معرّف Firebase (UID) — لا يحتوي على أي بيانات شخصية</li>
-    </ul>
+    <h2>3. مزوّدو الخدمة والمشاركة</h2>
+    <p>لا نبيع بياناتك. نعالج أو نشارك القدر اللازم فقط مع:</p>
+    <ul><li><strong>Google Firebase وGoogle Sign-In</strong>: المصادقة وقواعد البيانات والوظائف السحابية.</li><li><strong>Cloudflare</strong>: خادم اللعب الفوري والغرف والحماية وتحديد المعدل.</li><li><strong>Expo</strong>: تحديثات التطبيق وتسليم الإشعارات.</li><li><strong>Sentry</strong>: تقارير الأعطال والأداء والتشخيص.</li><li><strong>Google AdMob</strong>: الإعلانات والموافقة والقياس عند التفعيل.</li></ul>
+    <p>قد تُعالج البيانات في دول تعمل فيها هذه الجهات، وفق ضماناتها التعاقدية والقانونية.</p>
 
-    <h3>ب. بيانات اللعبة</h3>
-    <ul>
-      <li>إحصائيات اللعب (XP، عدد المباريات، الفوز، الإنجازات)</li>
-      <li>قائمة الأصدقاء التي تنشئها داخل التطبيق</li>
-      <li>تاريخ التحديات بين اللاعبين</li>
-    </ul>
+    <h2>4. البيانات الظاهرة للآخرين</h2>
+    <p>اسم اللاعب والصورة الرمزية والإطار والرتبة وبعض إحصاءات اللعب قد تظهر للاعبين المسجّلين حتى تعمل ميزات اللعب والأصدقاء. بريدك الإلكتروني ورمز الإشعار وقائمة الحظر ليست عامة.</p>
 
-    <h3>ج. بيانات تقنية</h3>
-    <ul>
-      <li>نوع الجهاز ونظام التشغيل (للتوافق)</li>
-      <li>تقارير الأخطاء عبر Sentry (لإصلاح المشاكل)</li>
-      <li>عنوان IP أثناء اللعب الأونلاين (لا نحفظه)</li>
-    </ul>
+    <h2>5. الاحتفاظ والحذف</h2>
+    <ul><li>نحتفظ بالحساب والتقدم ما دام الحساب موجوداً.</li><li>غرف اللعب غير النشطة مؤقتة وتُنظَّف تلقائياً، وعادة خلال ساعتين.</li><li>رمز الإشعار يُستبدل أو يُحذف عند إلغاء التسجيل أو حذف الحساب.</li><li>سجلات الأعطال والأمان تبقى وفق دورة الاحتفاظ المحددة لدى مزوّد الخدمة ثم تُحذف.</li><li>بعد حذف الحساب قد نحتفظ ببلاغات الإساءة المقدّمة ضد الحساب، بما فيها المعرّف والمحتوى المرتبط، بقدر ما يلزم فقط للسلامة ومنع تكرار الإساءة والامتثال، مع تقييد الوصول إليها، ثم نحذفها عندما تنتفي الحاجة.</li></ul>
+    <p>يمكن حذف الحساب فوراً من <strong>حسابي ← حذف الحساب</strong>. ويمكن تقديم طلب خارجي عبر <a href="delete-account.html">صفحة حذف الحساب</a>؛ نعالجه خلال 30 يوماً.</p>
 
-    <h3>د. الإعلانات (عند التفعيل)</h3>
-    <p>
-      نستخدم <strong>Google AdMob</strong> لعرض إعلانات داخل التطبيق. الإعلانات الافتراضية
-      هي <em>non-personalized ads</em> (إعلانات عامة) ولا تتطلب جمع بيانات إضافية عنك.
-      إذا فعّلنا الإعلانات المخصصة مستقبلاً، سنطلب موافقتك الصريحة عبر طلب App Tracking Transparency
-      على iOS.
-    </p>
+    <h2>6. حقوقك واختياراتك</h2>
+    <p>يمكنك تعديل ملفك، منع الإشعارات من إعدادات الجهاز، إدارة موافقة الإعلانات عند توفر الخيار، وطلب الوصول أو التصحيح أو الحذف أو الاعتراض بحسب القانون المطبق. راسلنا من البريد المرتبط بالحساب حتى نتحقق من الطلب.</p>
 
-    <h2>3. كيف نستخدم بياناتك</h2>
-    <ul>
-      <li>تشغيل ميزات اللعبة (الحساب، الأصدقاء، الأونلاين)</li>
-      <li>تحسين تجربة المستخدم</li>
-      <li>إصلاح الأخطاء التقنية</li>
-      <li>عرض إعلانات (عند التفعيل)</li>
-    </ul>
+    <h2>7. الأطفال</h2>
+    <p>Shkshk موجّه للمستخدمين بعمر <strong>13 سنة فأكثر</strong>، ولا يستهدف الأطفال دون 13 سنة أو يجمع بياناتهم عمداً. إذا علمنا بوجود حساب لطفل دون السن المسموح فسنحذفه.</p>
 
-    <h2>4. مع من نشارك بياناتك</h2>
-    <p>
-      نشارك بياناتك فقط مع خدمات تقنية موثوقة لتشغيل التطبيق:
-    </p>
-    <ul>
-      <li><strong>Google Firebase</strong> — قاعدة البيانات والمصادقة</li>
-      <li><strong>Google AdMob</strong> — عرض الإعلانات (عند التفعيل)</li>
-      <li><strong>Sentry</strong> — تتبع الأخطاء التقنية</li>
-      <li><strong>Fly.io + Upstash</strong> — خوادم اللعب الأونلاين</li>
-    </ul>
-    <p><strong>لا نبيع بياناتك لأي طرف ثالث.</strong></p>
+    <h2>8. الأمان</h2>
+    <p>نستخدم اتصالات TLS ومصادقة وقواعد وصول وخوادم تحقق وحدود معدل. لا توجد وسيلة نقل أو تخزين مضمونة 100%، لذلك نراجع الضوابط ونعالج الحوادث عند اكتشافها.</p>
 
-    <h2>5. حقوقك</h2>
-    <ul>
-      <li><strong>الوصول:</strong> يمكنك رؤية كل بياناتك في الملف الشخصي داخل التطبيق</li>
-      <li><strong>الحذف:</strong> راسلنا على البريد أدناه لحذف حسابك وكل بياناتك خلال 30 يوم</li>
-      <li><strong>التعديل:</strong> يمكنك تعديل اسمك وأيقونتك من الملف الشخصي</li>
-      <li><strong>الانسحاب:</strong> احذف التطبيق في أي وقت لإيقاف جمع البيانات</li>
-    </ul>
-
-    <h2>6. الأطفال</h2>
-    <p>
-      التطبيق مناسب لكل الأعمار (تصنيف PG). لا نجمع بشكل متعمد بيانات من أطفال أقل من 13 سنة.
-      إذا اكتشفنا ذلك، سنحذف البيانات فوراً.
-    </p>
-
-    <h2>7. الأمان</h2>
-    <p>
-      نحمي بياناتك بـ:
-    </p>
-    <ul>
-      <li>تشفير TLS لكل الاتصالات</li>
-      <li>قواعد أمان Firebase صارمة</li>
-      <li>مصادقة Firebase لكل عملية</li>
-    </ul>
-
-    <h2>8. التغييرات على هذه السياسة</h2>
-    <p>
-      قد نحدّث هذه السياسة. التغييرات تظهر هنا مع تحديث "آخر تحديث" في الأعلى.
-      التغييرات الجوهرية ستُشعَر داخل التطبيق.
-    </p>
-
-    <h2>9. اتصل بنا</h2>
-    <p>
-      لأي سؤال أو طلب: <a href="mailto:kuwaitx9@gmail.com">kuwaitx9@gmail.com</a>
-    </p>
+    <h2>9. التغييرات والتواصل</h2>
+    <p>قد نحدّث هذه السياسة مع تطور التطبيق أو المتطلبات. سنغيّر التاريخ أعلاه وننبه داخل التطبيق عند وجود تغيير جوهري. للاستفسارات والطلبات: <a href="mailto:shkshk.app@gmail.com">shkshk.app@gmail.com</a>.</p>
   </section>
 
-  <hr>
-
-  <!-- ─────────────── English ─────────────── -->
-  <section id="en" lang="en" style="display:none;">
+  <section id="en" lang="en" style="display:none">
     <h1>Privacy Policy — Shkshk</h1>
-    <p class="meta">Last updated: 2026-05-23</p>
+    <p class="meta">Last updated: July 20, 2026</p>
+    <p>This policy explains how <strong>Shkshk</strong>, a collection of seven board games, handles data when you play locally, against AI, or online.</p>
+    <nav><a href="delete-account.html#en">Delete account</a><a href="terms.html#en">Terms of Use</a><a href="support.html#en">Support</a></nav>
 
-    <h2>1. Introduction</h2>
-    <p>
-      <strong>Shkshk</strong> (a Dots & Boxes game) respects your privacy.
-      This policy explains what data we collect, how we use it, and your rights.
-    </p>
+    <h2>1. Data we process</h2>
+    <h3>Account and profile</h3>
+    <ul><li>Your Firebase account identifier and sign-in provider.</li><li>The email address and name made available by Google or Apple when you approve sign-in.</li><li>Your chosen player name, avatar, frame, and language.</li></ul>
+    <h3>Progress and social play</h3>
+    <ul><li>XP, rank, statistics, achievements, rewards, and daily challenges.</li><li>Friends, friend requests, challenges, blocks, and abuse reports.</li><li>Presence, rooms, and moves needed to run online games and prevent cheating.</li></ul>
+    <h3>Notifications and technical information</h3>
+    <ul><li>A device push token if you allow notifications.</li><li>App version, device and OS information, crash, performance, and diagnostic data.</li><li>IP address and connection identifiers processed by hosting and security services while connected, used for protection, rate limiting, and gameplay.</li></ul>
+    <h3>Photos</h3>
+    <p>The app can save a result card it created. Shkshk does not need to read your photos or videos and does not upload your photo library to our servers.</p>
+    <h3>Advertising when enabled</h3>
+    <p>The app includes Google AdMob, while ad display is controlled remotely. When enabled, Google may process IP address, device identifiers, ad interactions, diagnostics, and consent-region information for ad delivery, measurement, and fraud prevention. We use Google's consent platform where required, and the app exposes ad privacy options when required.</p>
 
-    <h2>2. Data We Collect</h2>
+    <h2>2. Why we use data</h2>
+    <ul><li>Create accounts, sync progress, and operate friends, notifications, and matches.</li><li>Verify game results, secure accounts, and prevent cheating, abuse, and excessive use.</li><li>Diagnose crashes and improve performance and compatibility.</li><li>Show and measure ads when enabled, subject to consent choices and law.</li><li>Answer support requests and fulfil privacy requests.</li></ul>
 
-    <h3>a. Account data</h3>
-    <ul>
-      <li>Your chosen name and avatar</li>
-      <li>Preferred language</li>
-      <li>Firebase user ID (no personal info)</li>
-    </ul>
+    <h2>3. Service providers and sharing</h2>
+    <p>We do not sell your data. We process or share only what is necessary with:</p>
+    <ul><li><strong>Google Firebase and Google Sign-In</strong> for authentication, databases, and cloud functions.</li><li><strong>Cloudflare</strong> for real-time gameplay, rooms, security, and rate limiting.</li><li><strong>Expo</strong> for app updates and push delivery.</li><li><strong>Sentry</strong> for crash, performance, and diagnostic reporting.</li><li><strong>Google AdMob</strong> for ads, consent, and measurement when enabled.</li></ul>
+    <p>Data may be processed in countries where these providers operate, subject to their contractual and legal safeguards.</p>
 
-    <h3>b. Game data</h3>
-    <ul>
-      <li>Gameplay stats (XP, games played, wins, achievements)</li>
-      <li>Your friends list inside the app</li>
-      <li>Challenge history with other players</li>
-    </ul>
+    <h2>4. Data visible to other players</h2>
+    <p>Your player name, avatar, frame, rank, and limited game statistics may be visible to signed-in players so gameplay and friend features work. Your email, push token, and block list are not public.</p>
 
-    <h3>c. Technical data</h3>
-    <ul>
-      <li>Device type and OS version (for compatibility)</li>
-      <li>Crash reports via Sentry (to fix bugs)</li>
-      <li>IP address during online play (not stored)</li>
-    </ul>
+    <h2>5. Retention and deletion</h2>
+    <ul><li>Account and progress data are retained while your account exists.</li><li>Inactive game rooms are temporary and automatically cleaned, normally within two hours.</li><li>Push tokens are replaced or deleted when unregistered or when the account is deleted.</li><li>Crash and security logs remain for the service provider's configured retention cycle and are then deleted.</li><li>After account deletion, abuse reports made against the account, including the relevant identifier and report content, may be retained only as reasonably necessary for safety, repeat-abuse prevention, and compliance, with restricted access, and deleted when no longer needed.</li></ul>
+    <p>You can delete your account directly under <strong>Account → Delete Account</strong>. You can also submit an external request through the <a href="delete-account.html#en">account deletion page</a>; we process it within 30 days.</p>
 
-    <h3>d. Ads (when enabled)</h3>
-    <p>
-      We use <strong>Google AdMob</strong> for in-app ads. By default we serve
-      <em>non-personalized ads</em>, which don't require collecting extra data
-      about you. If we enable personalized ads in the future, we'll request
-      your explicit consent via Apple's App Tracking Transparency on iOS.
-    </p>
+    <h2>6. Your rights and choices</h2>
+    <p>You can edit your profile, disable notifications in device settings, manage ad consent when the option is available, and request access, correction, deletion, or objection where applicable. Contact us from the account email so we can verify the request.</p>
 
-    <h2>3. How We Use Your Data</h2>
-    <ul>
-      <li>Run game features (account, friends, online play)</li>
-      <li>Improve user experience</li>
-      <li>Fix technical bugs</li>
-      <li>Show ads (when enabled)</li>
-    </ul>
+    <h2>7. Children</h2>
+    <p>Shkshk is intended for users aged <strong>13 and older</strong>. We do not target or knowingly collect data from children under 13. If we learn that an underage child created an account, we will delete it.</p>
 
-    <h2>4. Who We Share Data With</h2>
-    <p>
-      We share data only with trusted technical services that power the app:
-    </p>
-    <ul>
-      <li><strong>Google Firebase</strong> — database and auth</li>
-      <li><strong>Google AdMob</strong> — ad delivery (when enabled)</li>
-      <li><strong>Sentry</strong> — crash reporting</li>
-      <li><strong>Fly.io + Upstash</strong> — online game servers</li>
-    </ul>
-    <p><strong>We do not sell your data to any third party.</strong></p>
+    <h2>8. Security</h2>
+    <p>We use TLS, authentication, access rules, server-side validation, and rate limits. No transmission or storage method is 100% secure, so we review controls and respond to incidents when identified.</p>
 
-    <h2>5. Your Rights</h2>
-    <ul>
-      <li><strong>Access:</strong> view all your data in the Profile screen</li>
-      <li><strong>Deletion:</strong> email us below to delete your account and all data within 30 days</li>
-      <li><strong>Editing:</strong> update name and avatar from Profile</li>
-      <li><strong>Opt-out:</strong> uninstall the app at any time to stop data collection</li>
-    </ul>
-
-    <h2>6. Children</h2>
-    <p>
-      The app is suitable for all ages (PG rated). We do not knowingly collect
-      data from children under 13. If we discover such data, we'll delete it
-      immediately.
-    </p>
-
-    <h2>7. Security</h2>
-    <p>We protect your data with:</p>
-    <ul>
-      <li>TLS encryption for all connections</li>
-      <li>Strict Firebase security rules</li>
-      <li>Firebase Auth on every operation</li>
-    </ul>
-
-    <h2>8. Changes to This Policy</h2>
-    <p>
-      We may update this policy. Changes appear here with a refreshed
-      "Last updated" date. Material changes will be notified in-app.
-    </p>
-
-    <h2>9. Contact Us</h2>
-    <p>
-      For any question or request: <a href="mailto:kuwaitx9@gmail.com">kuwaitx9@gmail.com</a>
-    </p>
+    <h2>9. Changes and contact</h2>
+    <p>We may update this policy as the app or requirements evolve. We will change the date above and provide an in-app notice for material changes. Contact: <a href="mailto:shkshk.app@gmail.com">shkshk.app@gmail.com</a>.</p>
   </section>
 
-  <p class="footer">© 2026 Shkshk · <a href="mailto:kuwaitx9@gmail.com">kuwaitx9@gmail.com</a></p>
-
-</div>
-
-<script>
-function show(lang) {
-  document.getElementById('ar').style.display = (lang === 'ar') ? 'block' : 'none';
-  document.getElementById('en').style.display = (lang === 'en') ? 'block' : 'none';
-  document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
-  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-}
-if (location.hash === '#en') show('en');
-</script>
-
-</body>
-</html>
+  <p class="footer">© 2026 Shkshk · <a href="mailto:shkshk.app@gmail.com">shkshk.app@gmail.com</a></p>
+</main>
+<script>function showLang(lang){document.getElementById('ar').style.display=lang==='ar'?'block':'none';document.getElementById('en').style.display=lang==='en'?'block':'none';document.getElementById('btn-ar').classList.toggle('active',lang==='ar');document.getElementById('btn-en').classList.toggle('active',lang==='en');location.hash=lang==='en'?'en':'ar'}if(location.hash==='#en')showLang('en')</script>
+</body></html>
